@@ -173,16 +173,16 @@
                 </div>
                 <h1 style="color: white; margin-bottom: 1rem;">Notes de Version 3.2.0</h1>
                 <p style="font-size: 1.25rem; opacity: 0.95; margin-bottom: 2rem;">
-                    Date de release : <strong>24 Octobre 2025</strong> | Type : <strong>Mise à jour majeure (Features + Optimisations)</strong>
+                    Date de release : <strong>25 Octobre 2025</strong> | Type : <strong>Mise à jour majeure (Features + Optimisations)</strong>
                 </p>
 
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <span class="stat-number">12</span>
+                        <span class="stat-number">15</span>
                         <span class="stat-label">Nouvelles fonctionnalités</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">8</span>
+                        <span class="stat-number">12</span>
                         <span class="stat-label">Corrections de bugs</span>
                     </div>
                     <div class="stat-card">
@@ -203,6 +203,105 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Nouvelles Fonctionnalités Majeures</h2>
+            </div>
+
+            <div class="changelog-section">
+                <h3>
+                    <i class="fas fa-route" style="color: var(--primary-solid); font-size: 2rem;"></i>
+                    Système de Tour Guidé Interactif
+                </h3>
+
+                <div class="changelog-item">
+                    <h4>
+                        <span class="tag tag-new">Nouveau</span>
+                        Tour Guidé Complet
+                    </h4>
+                    <p>
+                        Nouveau système de découverte guidée de l'application avec navigation automatique :
+                    </p>
+                    <ul>
+                        <li><strong>Tour général</strong> : 18 étapes couvrant toutes les fonctionnalités principales</li>
+                        <li><strong>Tours thématiques</strong> : Devis, Raccourcis clavier, Import de données</li>
+                        <li><strong>Navigation automatique</strong> : Change d'onglet automatiquement pour expliquer chaque section</li>
+                        <li><strong>Sauvegarde de progression</strong> : Reprend là où vous vous êtes arrêté</li>
+                        <li><strong>Message de bienvenue</strong> : Détection automatique des nouveaux utilisateurs</li>
+                        <li><strong>Raccourci F2</strong> : Lancement rapide du tour guidé à tout moment</li>
+                    </ul>
+                </div>
+
+                <div class="changelog-item">
+                    <h4>
+                        <span class="tag tag-new">Nouveau</span>
+                        Bulles d'Aide Contextuelles
+                    </h4>
+                    <p>
+                        Interface intuitive avec bulles animées qui suivent votre progression :
+                    </p>
+                    <ul>
+                        <li>Animation smooth avec effet de pulse</li>
+                        <li>Positionnement intelligent près des éléments UI</li>
+                        <li>Overlay sombre pour mettre en valeur l'élément actuel</li>
+                        <li>Compteur de progression (Étape X/Y)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="changelog-section">
+                <h3>
+                    <i class="fas fa-keyboard" style="color: var(--accent-solid); font-size: 2rem;"></i>
+                    Raccourcis Clavier Optimisés AZERTY
+                </h3>
+
+                <div class="changelog-item">
+                    <h4>
+                        <span class="tag tag-new">Nouveau</span>
+                        Support Complet Clavier AZERTY Français
+                    </h4>
+                    <p>
+                        Plus de 30 raccourcis clavier adaptés pour clavier AZERTY :
+                    </p>
+                    <ul>
+                        <li><strong>Navigation rapide</strong> : Ctrl+&é"'( pour accéder aux onglets principaux</li>
+                        <li><strong>Alt+1-9</strong> : Navigation directe vers n'importe quel onglet par position</li>
+                        <li><strong>Ctrl+Tab / Ctrl+Shift+Tab</strong> : Cycle entre les onglets</li>
+                        <li><strong>Actions courantes</strong> : Ctrl+S (Sauvegarder), Ctrl+N (Nouveau), Ctrl+D (Dupliquer)</li>
+                        <li><strong>Devis & Factures</strong> : Ctrl+Q (Nouveau devis), Ctrl+B (Convertir en facture)</li>
+                        <li><strong>Recherche</strong> : Ctrl+K (Quick Add), Ctrl+F (Recherche)</li>
+                    </ul>
+                </div>
+
+                <div class="changelog-item">
+                    <h4>
+                        <span class="tag tag-new">Nouveau</span>
+                        Modal d'Aide Raccourcis Redesigné
+                    </h4>
+                    <p>
+                        Interface claire et organisée pour visualiser tous les raccourcis disponibles :
+                    </p>
+                    <ul>
+                        <li>Organisation par catégories (Navigation, Actions, Devis, Recherche, Utilitaires)</li>
+                        <li>Affichage visuel des touches avec style 3D</li>
+                        <li>Adaptation automatique au thème sombre</li>
+                        <li>Indicateurs 🔒 pour les raccourcis restreints en mode invité</li>
+                        <li>Accessible via F1 ou Ctrl+/ à tout moment</li>
+                    </ul>
+                </div>
+
+                <div class="changelog-item">
+                    <h4>
+                        <span class="tag tag-improved">Amélioré</span>
+                        Sécurité Mode Invité
+                    </h4>
+                    <p>
+                        Protection renforcée des raccourcis clavier en mode invité :
+                    </p>
+                    <ul>
+                        <li>Blocage automatique des raccourcis vers Catalogue, Configuration, Fournisseurs, Clients</li>
+                        <li>Navigation intelligente qui saute les onglets restreints avec Ctrl+Tab</li>
+                        <li>Messages d'alerte clairs lors de tentatives d'accès non autorisées</li>
+                        <li>Liste des raccourcis accessibles affichée dans l'aide</li>
+                    </ul>
+                </div>
             </div>
 
             <div class="changelog-section">
@@ -469,6 +568,35 @@
                     <h4><span class="tag tag-fix">Corrigé</span> Export FEC Comptable</h4>
                     <p>
                         Correction du formatage des dates pour conformité stricte avec le format réglementaire français.
+                    </p>
+                </div>
+
+                <div class="changelog-item">
+                    <h4><span class="tag tag-fix">Corrigé</span> Bug Overlay Tour Guidé</h4>
+                    <p>
+                        <strong>Problème :</strong> Les overlays sombres s'empilaient lors de lancements multiples du tour guidé, rendant l'écran progressivement noir<br>
+                        <strong>Solution :</strong> Vérification et réutilisation de l'overlay existant au lieu d'en créer un nouveau à chaque lancement
+                    </p>
+                </div>
+
+                <div class="changelog-item">
+                    <h4><span class="tag tag-fix">Corrigé</span> Backdrops Bootstrap Multiples</h4>
+                    <p>
+                        Correction du bug où les backdrops des modals Bootstrap s'accumulaient lors d'appuis multiples sur F1, rendant l'interface de plus en plus sombre.
+                    </p>
+                </div>
+
+                <div class="changelog-item">
+                    <h4><span class="tag tag-fix">Corrigé</span> Navigation Tour Guidé</h4>
+                    <p>
+                        L'étape "Quick Add" du tour général naviguait vers l'onglet Accueil au lieu de Recherche. Corrigé pour une démonstration cohérente.
+                    </p>
+                </div>
+
+                <div class="changelog-item">
+                    <h4><span class="tag tag-fix">Corrigé</span> Affichage Touches Clavier</h4>
+                    <p>
+                        Les touches de raccourcis (kbd) étaient quasi invisibles dans le tour guidé avec un fond blanc sur blanc. Ajout d'un style 3D avec ombre et contraste amélioré.
                     </p>
                 </div>
             </div>
